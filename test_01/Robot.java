@@ -21,7 +21,7 @@ class Robot {
                     System.out.print(speach.get(i));
                 } else {
                     if (i == speach.size() - 1) {
-                        System.out.print(" и " + speach.get(i) + "!");
+                        System.out.print(" и " + speach.get(i));
                     } else {
                         System.out.print(", " + speach.get(i));
                     }
