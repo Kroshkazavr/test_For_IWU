@@ -6,19 +6,18 @@ import java.util.List;
 class SumOfUnique {
 
     /**
-     * @param sequence последоватьельность (список) чисел для анализа
-     * @param m        длина отрезка для подсчета повторений
-     * @param n        количество повторений
-     * @return сумма уникальных чисел, которые повторяются не менее n раз в m подряд идущих числах
-     * внутри последовательности
+     * @param sequence given sequence
+     * @param m        segment length
+     * @param n        number of repetitions
+     * @return sum of unique numbers that are repeated at least n times in m consecutive numbers in given sequence
      */
     int sumOfUnique(List<Integer> sequence, int m, int n) {
         int result = 0;
         List<Integer> uniqueNumbers = new ArrayList<>();
-        if (m > sequence.size()) {                      // если отрезок больше списка
+        if (m > sequence.size()) {                      // if segment is more than sequence length
             m = sequence.size();
         }
-        if (n > m) {                                    // если повторов больше чем отрезок
+        if (n > m) {                                    // if number of repetitions is more than segment length
             return 0;
         }
 
@@ -36,17 +35,17 @@ class SumOfUnique {
     }
 
     /**
-     * @param uniqueNumbers список для добавления элемента
-     * @param i             элемент, который добавляется, если такого еще нет в списке
+     * @param uniqueNumbers list to add an item
+     * @param i             item to add if it is not already in the list
      */
     private void addToUnique(List<Integer> uniqueNumbers, Integer i) {
-        if (!uniqueNumbers.contains(i))                 // добавляем число, если его еще нет в списке
+        if (!uniqueNumbers.contains(i))
             uniqueNumbers.add(i);
     }
 
     /**
-     * @param subSequence последоватьельность (список) чисел для анализа
-     * @return количество повторений первого элемента внутри последовательности
+     * @param subSequence segment for analysis
+     * @return the number of repetitions of the first element within the segment
      */
     private int checkSubSubSequence(List<Integer> subSequence) {
         int count = 1;
