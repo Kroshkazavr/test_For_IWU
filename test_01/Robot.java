@@ -3,16 +3,16 @@ package test_01;
 import java.util.List;
 
 /**
- * Класс робот с методом форматированного вывода списка слов
+ * Class Robot with a word list output formatting method
  */
 
 class Robot {
 
     /**
-     * Формат вывода: все !null слова через запятую, последнее через 'и'.
-     * Пример: "Кошка, Собака, Крокодил, Муха и Летучая мышь!"
+     * Output: all non-empty words separated by commas, the last with 'and'.
+     * Example: "Cat, Dog, Crocodile, Fly and Bat"
      *
-     * @param speach список слов для форматированного вывода
+     * @param speach list of words for formatted output
      */
     void talk(List<String> speach) {
         for (int i = 0; i < speach.size(); i++) {
@@ -21,7 +21,7 @@ class Robot {
                     System.out.print(speach.get(i));
                 } else {
                     if (i == speach.size() - 1) {
-                        System.out.print(" и " + speach.get(i));
+                        System.out.print(" and " + speach.get(i));
                     } else {
                         System.out.print(", " + speach.get(i));
                     }

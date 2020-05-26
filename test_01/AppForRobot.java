@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Приложения для форматированного вывода списка слов.
- * Вывести все непустые слова через запятую, последнее через 'и'.
- * Пример: "Кошка, Собака, Крокодил, Муха и Летучая мышь"
+ * Application for formatting the output of a list of words.
+ * Print all non-empty words separated by commas, the last and 'and'.
+ * Output Example: "Cat, Dog, Crocodile, Fly and Bat"
  */
 
 public class AppForRobot {
 
     public static void main(String[] args) {
         List<String> speach = new ArrayList<>();
-        speach.add("Лебедь");
+        speach.add("Bird");
         speach.add(null);
-        speach.add("Рак");
-        speach.add("Щука");
+        speach.add("Fish");
+        speach.add("Owl");
         speach.add(null);
-        speach.add("Кошка");
-        speach.add("Барбос");
+        speach.add("Cat");
+        speach.add("Fluffy");
 
         Robot robo = new Robot();
         robo.talk(speach);
