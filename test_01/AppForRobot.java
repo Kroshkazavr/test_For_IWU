@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Application for formatting the output of a list of words.
- * Print all non-empty words separated by commas, the last and 'and'.
+ * Print all non-empty words separated by commas, the last with 'and'.
  * Output Example: "Cat, Dog, Crocodile, Fly and Bat"
  */
 
