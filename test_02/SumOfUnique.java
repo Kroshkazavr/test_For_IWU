@@ -36,7 +36,7 @@ class SumOfUnique {
 
     /**
      * @param uniqueNumbers list to add an item
-     * @param i             item to add if it is not already in the list
+     * @param i             item to add
      */
     private void addToUnique(List<Integer> uniqueNumbers, Integer i) {
         if (!uniqueNumbers.contains(i))

@@ -16,11 +16,11 @@ import java.util.Scanner;
 public class AppSumOfUnique {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter a sequence of numbers. Numbers must be entered with a space.");
-        String[] line = in.nextLine().split(" ");
+        System.out.println("Enter a sequence of numbers.");
+        String line = in.nextLine();
         List<Integer> sequence = new ArrayList<>();
-        for (String s : line) {
-            sequence.add(Integer.parseInt(s));
+        for (int i = 0; i < line.length(); i++) {
+            sequence.add(Integer.valueOf(line.substring(i, i + 1)));
         }
 
         System.out.println("How many numbers will be in the segment?");
@@ -29,6 +29,6 @@ public class AppSumOfUnique {
         int n = in.nextInt();
         SumOfUnique sum = new SumOfUnique();
         System.out.println("The sum of unique numbers satisfying the condition in this sequence is " +
-                + sum.sumOfUnique(sequence, m, n));
+                +sum.sumOfUnique(sequence, m, n));
     }
 }
