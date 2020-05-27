@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Миша хочет quantity штук шаурмы и у него есть budget денег. Также известен список цен на шаурму в ближайших кафе.
- * Какую максимальную сумму может потратить Миша, чтобы приобрести столько шаурм, сколько ему хочется?
+ * Mika wants a “quantity” of tacos and he has a “budget” of money.
+ * There is also a list of taco prices at nearby cafes.
+ * What is the maximum amount Mika can spend to buy as many tacos as he wants?
  */
 public class AppForTacoBudget {
 
@@ -21,6 +22,6 @@ public class AppForTacoBudget {
         int quantity = 4;
 
         TacoBudget tb = new TacoBudget();
-        System.out.println("Максимально можно потратить " + tb.takeMyMany(price, budget, quantity) + " руб.");
+        System.out.println("The maximum amount is " + tb.takeMyMany(price, budget, quantity) + " euros.");
     }
 }

@@ -6,10 +6,10 @@ import java.util.List;
 class TacoBudget {
 
     /**
-     * @param price    список с ценами на шаурму в ближайших кафе
-     * @param budget   количество Мишиных денег
-     * @param quantity количество штук шаурмы, которое хочет купить Миша
-     * @return максимальнуая сумма которую может потратить Миша, чтобы приобрести столько шаурм, сколько ему хочется
+     * @param price    list of taco prices at nearby cafes
+     * @param budget   Mika's budget
+     * @param quantity quantity of tacos Mika wants
+     * @return maximum amount Mika can spend to buy as many tacos as he wants
      */
     int takeMyMany(List<Integer> price, int budget, int quantity) {
         int maxBudget = 0;
@@ -26,7 +26,7 @@ class TacoBudget {
             }
         }
         if (maxBudget == 0) {
-            System.out.println("В рамках бюджета в " + budget + " руб. невозможно купить " + quantity + " шт. шав.");
+            System.out.println("It is impossible to buy " + quantity + " tacos within the budget in " + budget + " euros");
         }
         return maxBudget;
     }
