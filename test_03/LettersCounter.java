@@ -1,14 +1,14 @@
 package test_03;
 
 /**
- * Класс с методом для подсчета слов с заданным количеством букв.
+ * A class with a method for counting words with a given number of letters.
  */
 class LettersCounter {
 
     /**
-     * @param phrase   строка для подсчета слов, соотвующих условию
-     * @param quantity количество букв в искомом слове
-     * @return количество слов с заданным количеством букв
+     * @param phrase   line for counting words that satisfy the condition
+     * @param quantity given number of letters in a word
+     * @return number of words satisfying the condition
      */
     int checkPhrase(String phrase, int quantity) {
         int counter = 0;
