@@ -10,6 +10,7 @@ Java test-tasks for junior level:
    Solving: [344], [446], [462], [620], [200], [000] <- 4x2, 4x2, -, -, 0x2, 0x2;
    unique numbers 4 and 0 => sum = 4+0 = 4.
    Output: 4
-3. Приложение для подсчета слов с заданным количеством букв в строке.
-4. Миша хочет quantity штук шаурмы и у него есть budget денег. Также известен список цен на шаурму в ближайших кафе.
-  Какую максимальную сумму может потратить Миша, чтобы приобрести столько шаурм, сколько ему хочется?
+3. Application for counting words with a given number of letters in the entered line.
+4. Mika wants a “quantity” of tacos and he has a “budget” of money.
+   There is also a list of taco prices at nearby cafes.
+   What is the maximum amount Mika can spend to buy as many tacos as he wants?
